@@ -1,14 +1,19 @@
 {
   "name": "music-codes",
-  "version": "0.1.0",
+  "version": "0.0.2",
   "description": "Small library for music codes (ISRC, ISWC, UPC)",
-  "type": "module",
+  "main": "dist/index.js",
+  "type": "commonjs",
   "scripts": {
     "build": "tsc --build",
     "lint": "biome check . && tsc --noEmit",
     "format": "biome check . --write",
     "test": "vitest --run"
   },
+  "files": [
+    "dist",
+    "package.json"
+  ],
   "keywords": [
     "isrc",
     "iswc",
@@ -20,6 +25,16 @@
   ],
   "author": "Daniel Zahariev <daniel.zahariev@gmail.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/daniel-zahariev/music-codes-js.git"
+  },
+  "contributors": [
+    {
+      "name": "Daniel Zahariev",
+      "email": "daniel.zahariev@gmail.com"
+    }
+  ],
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
     "@faker-js/faker": "^9.3.0",
