@@ -2,3 +2,4 @@ dist
 node_modules
 .vscode
 tsconfig.tsbuildinfo
+.DS_Store
